@@ -41,6 +41,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- inizio header -->
         <header>
             <div id="header-top">
                 <img src="img/logo.png" alt="Logo Google">
@@ -84,26 +85,24 @@
         </header>
         <main>
             <div class="container">
-                <div class="faq-container">
-                    <?php
-                        //ciclo l'array e ad ogni iterazione mi estrapolo il valore della domanda e risposta dell'array interno
-                        foreach ($faq as $faq_item) { ?>
-                            <div class="faq-item">
-                                <h2>
-                                    <?php
-                                    echo $faq_item["domanda"];
-                                    ?>
-                                </h2>
-                                <p>
-                                    <?php
-                                        echo $faq_item["risposta"];
-                                    ?>
-                                </p>
-                            </div>
-                            <?php
-                        }
-                    ?>
-                </div>
+                <?php
+                    //ciclo l'array e ad ogni iterazione stampo i due valori dell'array interno
+                    foreach ($faq as $faq_item) { ?>
+                        <div class="faq-item">
+                            <h2>
+                                <?php
+                                echo $faq_item["domanda"];
+                                ?>
+                            </h2>
+                            <p>
+                                <?php
+                                    echo $faq_item["risposta"];
+                                ?>
+                            </p>
+                        </div>
+                        <?php
+                    }
+                ?>
             </div>
         </main>
         <footer>
