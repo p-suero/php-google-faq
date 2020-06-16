@@ -1,4 +1,12 @@
 <?php
+
+    //*************ATTENZIONE*********************************************************************************
+    //L'UNIONE DEI SOTTO PARAGRAFI IN UN ARRAY E'STATA SUGGERITA DA MOMO  RAMADORI ED EDOARDO PIERGENTILI
+    //nella commit precedente è presente la mia divisione che non tiene conto dei sottoparagrafi
+    //***********************************************************************************************************************
+
+
+
     //creo un array contenente una chiave che equivale alla domanda ed un valore che equivale all'array dei paragrafi della risposta
     $faq = [
         "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?" => [
