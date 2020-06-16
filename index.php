@@ -38,37 +38,106 @@
     <head>
         <meta charset="utf-8">
         <title>Faq Google</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <div id="header-top">
-
+                <img src="img/logo.png" alt="Logo Google">
+                <h1>Privacy e termini</h1>
             </div>
             <div  id="header-bottom">
-
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Introduzione
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Norme sulla privacy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Termini di servizio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Tecnologie
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Domande frequenti
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="account">
+                    <img src="img/account-img.jpg" alt="Immagine account">
+                    <a href="#">paolo.suero@gmail.com</a>
+                </div>
             </div>
         </header>
         <main>
-            <div class="faq-container">
-                <?php
-                    //ciclo l'array e ad ogni iterazione mi estrapolo il valore della domanda e risposta dell'array interno
-                    foreach ($faq as $faq_item) { ?>
-                        <div class="faq-item">
-                            <h2>
-                                <?php
-                                echo $faq_item["domanda"];
-                                ?>
-                            </h2>
-                            <p>
-                                <?php
-                                    echo $faq_item["risposta"];
-                                ?>
-                            </p>
-                        </div>
-                        <?php
-                    }
-                ?>
+            <div class="container">
+                <div class="faq-container">
+                    <?php
+                        //ciclo l'array e ad ogni iterazione mi estrapolo il valore della domanda e risposta dell'array interno
+                        foreach ($faq as $faq_item) { ?>
+                            <div class="faq-item">
+                                <h2>
+                                    <?php
+                                    echo $faq_item["domanda"];
+                                    ?>
+                                </h2>
+                                <p>
+                                    <?php
+                                        echo $faq_item["risposta"];
+                                    ?>
+                                </p>
+                            </div>
+                            <?php
+                        }
+                    ?>
+                </div>
             </div>
         </main>
+        <footer>
+            <div class="container">
+                <div id="footer-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Google
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Tutto su Google
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Privacy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Termini
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer-right">
+                    <select>
+                        <option value="Italiano">Italiano</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
